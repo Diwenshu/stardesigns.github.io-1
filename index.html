@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="inside ">
+            <div class="div4">
+
+                <img src="./image/message.png" alt="img" class="img3">
+                <a href="" style="color: #3c3b3b;">info@startdesign.com</a>
+            </div>
+            <div class="div5">
+
+                <button onclick="openForm()" class="button3">WE ARE HIRING</button>
+
+
+                <img src="./image/skype.png" class="img4">
+                <a href="" style="color: #3c3b3b;">start10design</a>
+                <img src="./image/indiaglag.jpg.png" class="img4">
+
+                <p>|</p>
+                <a href="" style="color: #3c3b3b;">
+                    +91 141 - 4044287
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <section id="loginForm" class="loginf"
+        style="border:2px solid rgb(179, 179, 179); ; height: 500px; width: 663px; border-radius: 10px; background-color: white;">
+        <div>
+            <div style="display: flex; justify-content: center;">
+                <h1 style="color: black; padding: 10px; font-size: xx-large; text-decoration: underline;
+                text-decoration-color: currentcolor;
+                text-decoration-color: deeppink;"> Enter your details </h1>
+            </div>
+            <div style="padding: 34px 32px; ">
+                <input type="text" placeholder="Full name"
+                    style="margin-bottom: 30px;  border-radius: 4px ;border: none; background-color: #ebebeb; height: 37px; width: 596px; padding-left: 22px; color: #0000007a;">
+                <input type="text" placeholder="Email address"
+                    style="margin-bottom: 30px; border-radius: 4px; border: none; background-color:#ebebeb; height: 37px; width: 596px; padding-left: 22px;color: #0000007a;">
+                <input type="text" placeholder="Contact no"
+                    style="border-radius: 4px; border: none; background-color: #ebebeb; height: 37px;  width: 596px; padding-left: 22px;color: #0000007a;">
+            </div>
+        
+            <div class="captcha">
+                <div  style="height: 10px; width:30px;border-color: #3c3b3b;" id="firstnumber">
+                    
+
+                </div>
+                <div  style="height: 10px; width:30px;border-color: #3c3b3b;">
+                    +
+                </div>
+                <div   style="height: 10px; width:30px;border-color: #3c3b3b;" id="secondnumber">
+                </div>
+                <div  style="height: 10px; width:30px;border-color: #3c3b3b;">
+                    =
+                </div>
+                <div>
+                    <input type="text" placeholder="" id="result" autocomplete="off">
+
+                </div>
+            </div>
+        
+
+            <div style="display: flex; justify-content: center; gap: 80px; padding-top: 65px;">
+                <button onclick="applyform()" class="button4">
+                    Apply
+
+                </button>
+
+                <button onclick="closeForm()" class="button5"> Close</button>
+            </div>
+        </div>
+   
+</section>
+    <div>
+        <section class="div1">
+            <div>
+                <img class="img" style="height:121px  ; width: 111px;" src="./image/128x128.png">
+            </div>
+            <div class="div2">
+                <a href="">HOME</a>
+
+                <a href="">ABOUT US</a>
+                <a href="">SERVICES</a>
+                <a href="">HIRE RESOURCES</a>
+                <a href="">PORTFOLIO</a>
+                <a href="">CAREER</a>
+                <a href="">CONTACT US</a>
+                <a href="">BLOG</a>
+
+
+            </div>
+            <div>
+                <button onclick="" class="button1">GET QUOTE</button>
+
+            </div>
+        </section>
+    </div>
+    <div class="div3">
+        <section class="section">
+            <div class="h1">
+                <h1 style="color:#454748;">Award Winning Web <br> <span style="color:#e0166c ;">Design Company</span>
+                </h1>
+                <p>
+                    Complete Website Design | Web Development | Search <br>Engine Optimization | UI/UX Design | Branding
+                </p>
+                <p style="font-size: 16px;">
+                    StartDesigns is based in India and provides web design and development <br> services worldwide. We
+                    thrive
+                    digital representation of businesses through our <br> intuitive, user-friendly, and modern website
+                    design
+                    and development services.<br> With over 6+ years of experience and a professional approach, we
+                    deliver<br>
+                    websites that meet your company's goals and make you 100% satisfied with<br> our work.
+                </p>
+                <div>
+                    <button onclick="" class="button2">GET STARTED <i class=" fa fa-arrow-right"></i> </button>
+                </div>
+
+            </div>
+            <div>
+                <img src="./image/page.png" alt="img" class="img2">
+            </div>
+
+
+
+        </section>
+    </div>
+    <script>
+
+        function openForm() {    
+
+            document.getElementById("loginForm").style.display = "block";
+            document.querySelector('.header').style.opacity="0.3";
+            document.querySelector('.div1').style.opacity="0.3";
+            document.querySelector('.div3').style.opacity="0.3";
+            document.querySelector('.div6').style.opacity="0.3";
+            document.querySelector('.section1').style.opacity="0.10";
+            document.querySelector('.section2').style.opacity="0.3";
+            document.querySelector('.section3').style.opacity="0.3";
+            document.querySelector('.section4').style.opacity="0.3";
+            document.querySelector('.section5').style.opacity="0.3";
+
+        }
+       
+     
+      let first_number =  document.getElementById("firstnumber").innerHTML=  Math.floor(Math.random() *10);
+
+       
+       let second_number = document.getElementById("secondnumber").innerHTML = Math.floor(Math.random() *10);
+
+        function applyform() {  
+            let result = document.getElementById('result').value;
+            
+        
+            if(result == (first_number + second_number)){
+            document.getElementById("loginForm").style.display = "none"; 
+            document.querySelector('.header').style.opacity="5";
+            document.querySelector('.div1').style.opacity="5";
+            document.querySelector('.div3').style.opacity="5";
+            document.querySelector('.div6').style.opacity="5";
+            document.querySelector('.section1').style.opacity="5";
+            document.querySelector('.section2').style.opacity="5";
+            document.querySelector('.section3').style.opacity="5";
+            document.querySelector('.section4').style.opacity="5";
+            document.querySelector('.section5').style.opacity="5";
+            alert('your application is submitted')
+            
+            
+
+
+            }else{
+                alert('Your answer is incorrect')
+            }
+
+          
+        }
+        function closeForm()
+        {
+            document.getElementById("loginForm").style.display = "none"; 
+            document.querySelector('.header').style.opacity="5";
+            document.querySelector('.div1').style.opacity="5";
+            document.querySelector('.div3').style.opacity="5";
+            document.querySelector('.div6').style.opacity="5";
+            document.querySelector('.section1').style.opacity="5";
+            document.querySelector('.section2').style.opacity="5";
+            document.querySelector('.section3').style.opacity="5";
+            document.querySelector('.section4').style.opacity="5";
+            document.querySelector('.section5').style.opacity="5";
+        }
+    </script>
+    <section>
+        <div class="div6">
+            <h1>About</h1>
+            <span>
+                <p>Technology for growing businesses</p>
+            </span>
+        </div>
+    </section>
+    <section class="section1">
+        <div>
+            <p>
+                StartDesigns is a custom web design & web app development agency based out in India, France, <br>
+                and USA. We have a team of skilled professionals with 290+ collective years of experience in <br>
+                custom UX/UI design and
+                web app development Solutions.<br><br>
+                We can convert your ideas into reality. We create cost-effective, award-winning solutions for our<br>
+                clients to grab digital space & create new business opportunities.
+            </p>
+            <button onclick="" class="button6">READ MORE <i class=" fa fa-arrow-right"></i></button>
+        </div>
+        <div>
+            <img src="./image/you.png" class="img5">
+        </div>
+    </section>
+    <section class="section2">
+        <div>
+            <p> Headquarters </p>
+            <span><strong> Jaipur, India</strong></span>
+
+        </div>
+        <div>
+            <p> Founded </p>
+            <span> <strong>2015</strong></span>
+
+        </div>
+        <div>
+            <p> Team members </p>
+            <span></span><strong> Jaipur, India</strong></span>
+
+        </div>
+        <div>
+            <p> Team members </p>
+            <span> <strong>Twenty-five (25)+ </strong></span>
+
+        </div>
+        <div>
+            <p> Client roster </p>
+            <span><strong>Over 700+ clients</strong></span>
+
+        </div>
+        <div>
+            <p> Projects delivered </p>
+            <span><strong>Over 1200</strong></span>
+
+        </div>
+    </section>
+    <section class="section3">
+        <div style="color: white;">
+            <h1>
+                Web Design and Development Solutions That We Offer
+            </h1>
+            <h2>
+                Range of web services that we provide
+            </h2>
+            <p>
+                We offer the best solutions in both the designing and development of graphics, websites, web-<br>app,
+                mobile
+                applications. We also give expert services for E-commerce development and digital<br> marketing.
+            </p>
+            <button onclick="" class="button7">Start project now <i class=" fa fa-arrow-right"></i></button>
+
+        </div>
+        <div>
+            <img src="./image/one.png">
+        </div>
+        <div>
+            <img src="./image/two.png" alt="">
+        </div>
+    </section>
+    <section class="section4">
+        <div>
+            <img src="./image/three.png" alt="">
+        </div>
+        <div>
+            <img src="./image/four.png" alt="">
+        </div>
+        <div>
+            <img src="./image/five.png" alt="fiveimg">
+        </div>
+    </section>
+    <section>
+        <div style="padding-left: 680px;">
+            <button onclick="" class="button6">VIEW ALL <i class=" fa fa-arrow-right"></i></button><button>
+        </div>
+    </section>
+    <section class="section5">
+        <div class="div6">
+            <h1>
+                Industries
+            </h1>
+            <h3>
+                Serving clients globally
+            </h3>
+        </div>
+    </section>
+</body>
+
+</html>
